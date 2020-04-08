@@ -84,6 +84,10 @@ body {
    font-weight: 500;
    font-size: 1.1em;
 }
+.btn-custom:hover {
+   color: #6ecdfb;
+   background: #fff;
+}
 .btn-custom i {
    margin-left: 1em;
 }

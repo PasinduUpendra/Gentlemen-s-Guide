@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  AOS.init();
   var mySwiper = new Swiper ('.swiper-container', {
     loop: true,
     autoplay: {
