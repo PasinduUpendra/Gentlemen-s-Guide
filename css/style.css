@@ -129,7 +129,15 @@ body {
 #primary-nav .nav-icon {
     margin: 0 .4em;
 }
-
+.mobile-share {
+   display: none;
+}
+.share-icons li {
+   margin-right: 1em;
+}
+.share-icons li a {
+    color: #fff;
+}
 /* Body */
 main {
    width: 100%;
@@ -145,6 +153,9 @@ main {
    height:  110vh;
    -ms-flex-align: center;
    align-items: center;
+}
+.hero-txt {
+   padding: 0 5vh;
 }
 #hero-section h1 {
    color: #fff;
@@ -184,6 +195,10 @@ main {
    background: url('../content/signup-bg.png');
    padding: 5vh 15px;
    color: #fff;
+}
+#signup h1 {
+   font-size: 3em;
+   margin-bottom: 0.2em;
 }
 .signup-box {
    width: 50%;
@@ -259,12 +274,44 @@ footer a {
    list-style: none;
    padding-inline-start: 0;
 }
-
 /* Responsive */
 /* Extra small devices (portrait phones, less than 576px) */
  @media (max-width: 575.98px) {
+   .collapse:not(.show) {
+      opacity: 0;
+      visibility: hidden;
+   }
+   #primary-nav {
+      padding: 0;
+   }
+   #primary-nav .collapsing {
+      opacity: 0;
+   }
+   #primary-nav .collapse {
+      background-color: #244769;
+      z-index: 999;
+      padding: 1em;
+      text-align: center;
+      opacity: 1;
+      visibility: visible;
+   }
+   #primary-nav .container-fluid {
+      padding: 0;
+   }
+   .navbar-dark .navbar-toggler {
+      margin-right: 10px;
+   }
    .navbar-brand img {
       max-width: 195px;
+   }
+   .navbar-brand {
+      padding: 0.5em;
+   }
+   #primary-nav .nav-icon {
+      display: none;
+   }
+   .mobile-share {
+      display: block;
    }
    #hero-section {
       background: url(../content/hero-mobile-bg.png);
@@ -272,8 +319,11 @@ footer a {
    }
    #hero-section .row {
       align-items: start;
-      padding-top: 17vh;
+      padding-top: 10vh;
       height: 80vh;
+   }
+   .hero-txt {
+      padding: 1em;
    }
    #hero-section h1 {
       font-size: 1.6em;
@@ -294,6 +344,9 @@ footer a {
    .book-text h1 {
       font-size: 2.5em;
    }
+   #signup h1 {
+       font-size: 2em;
+   }
    .signup-box {
       width: 90%;
    }
@@ -313,6 +366,9 @@ footer a {
       border-radius: 25px !important;
    }
    #testimonials .testimonials-slider {
-      height: 360px;
+      height: 320px;
+   }
+   #testimonials blockquote {
+      font-size: 1.2em;
    }
 }
